@@ -12,7 +12,7 @@ from pymongo import MongoClient
 nest_asyncio.apply()
 
 # Admin ID and bot token
-ADMIN_ID = 7346696232, 6773787379
+ADMIN_ID = 7346696232
 # MongoDB connection string
 MONGO_URI = "mongodb+srv://wenoobhosttest1:lovedogswetest81@cluster0.4lf5x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(MONGO_URI)
