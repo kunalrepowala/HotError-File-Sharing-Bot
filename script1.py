@@ -56,7 +56,7 @@ async def start(update: Update, context: CallbackContext):
                     caption = re.sub(r'(https?://[^\s]+)', '', caption)
 
             # Send a warning message
-            warning_message = await update.message.reply_text("⚠️ This file will be deleted within 1 minute. Please take note.")
+            warning_message = await update.message.reply_text("⚠️ This file will be deleted within 8 hours. Please take note.")
 
             # Create the web app button
             if web_app_url:
@@ -90,7 +90,7 @@ async def start(update: Update, context: CallbackContext):
 
 # New function to delete the media and warning message after 1 minute
 async def delete_media_after_1_minute(sent_media, update: Update, warning_message):
-    await asyncio.sleep(60)  # Wait for 1 minute
+    await asyncio.sleep(28800)  # Wait for 1 minute
 
     # Delete the warning message and the media
     try:
