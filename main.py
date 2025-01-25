@@ -3,7 +3,7 @@ import asyncio
 import os  # Import os module to fetch environment variables
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes, ChatJoinRequestHandler
 from web_server import start_web_server  # Import the web server function
-from script1 import extract_link_from_text, generate_unique_code, delete_media_after_1_minute, handle_media, list_links, start # Import the updated functions including ADMIN_ID
+from script1 import extract_link_from_text, generate_unique_code, delete_media_after_1_minute, handle_media, list_links, start, is_member_of_channels# Import the updated functions including ADMIN_ID
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
