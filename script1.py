@@ -27,7 +27,7 @@ logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Channel IDs
-REQUIRED_CHANNELS = [-1002411239175, -1002437038123]
+REQUIRED_CHANNELS = [-1002389931784, -1002351606649]
 INVITE_LINKS = {
     -1002389931784: "https://t.me/HotErrorLinks",
     -1002351606649: "https://t.me/HotError"
