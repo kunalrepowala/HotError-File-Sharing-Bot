@@ -12,7 +12,7 @@ from pymongo import MongoClient
 #nest_asyncio.apply()
 
 # Admin ID and bot token
-ADMIN_ID = 7346696232
+ADMIN_ID = 6773787379
 #TOKEN = "7660007316:AAHis4NuPllVzH-7zsYhXGfgokiBxm_Tml0"
 
 # MongoDB Connection
