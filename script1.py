@@ -71,7 +71,7 @@ async def start(update: Update, context: CallbackContext):
         
         # Add a button to retry with the same start link
         if start_param:
-            retry_button = InlineKeyboardButton("Retry with same link", url=f"https://t.me/{(await context.bot.get_me()).username}?start={start_param}")
+            retry_button = InlineKeyboardButton("Joined🧩 (restart)", url=f"https://t.me/{(await context.bot.get_me()).username}?start={start_param}")
             invite_buttons.append([retry_button])
 
         inline_keyboard = InlineKeyboardMarkup(invite_buttons)
@@ -107,7 +107,7 @@ async def start(update: Update, context: CallbackContext):
             if web_app_url:
                 web_app_info = WebAppInfo(url=web_app_url)
                 keyboard = InlineKeyboardMarkup([
-                    [InlineKeyboardButton(text="Open Web App", web_app=web_app_info)]
+                    [InlineKeyboardButton(text="Play ▶️", web_app=web_app_info)]
                 ])
             else:
                 keyboard = None
